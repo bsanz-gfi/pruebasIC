@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+ <!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 7.0.0//EN" 
+ "http://www.liferay.com/dtd/liferay-look-and-feel_7_0_0.dtd">
+
+ <look-and-feel>
+ 	<compatibility>
+ 		<version>7.0.0+</version>
+ 	</compatibility>
+ 	<theme id="es.navarra.microsite-2.3.0" name="Microsite Theme 2.3"> 
+ 		<template-extension>ftl</template-extension>
+ 		<settings>
+ 			<setting configurable="false" key="show-footer" type="checkbox" value="false" />
+			<setting configurable="false" key="show-header" type="checkbox" value="false" />
+			<setting configurable="false" key="show-maximize-minimize-application-links" type="checkbox" value="false" />
+			<setting configurable="false" key="show-site-name-default" value="true" />
+			<setting configurable="false" key="show-site-name-supported" value="true" />
+			<setting configurable="false" key="wrap-content" type="checkbox" value="false" />
+ 			
+ 			<setting configurable="true" key="Mostrar menu de navegacion" type="checkbox"/>
+ 			<setting configurable="true" key="Mostrar logotipo en portada" type="checkbox"/>
+ 			<setting configurable="true" key="Mostrar migas de pan" type="checkbox"/>
+ 			<setting configurable="true" key="Color del fondo de la cabecera" type="text" 
+    value="#FFF"/>
+    		<setting configurable="true" key="Color de idioma y pagina seleccionada" type="text" 
+    value="#F00"/>
+    		<setting configurable="true" key="Color de titulos y fondo de los botones" type="text" 
+    value="#F00"/>
+    		<setting configurable="true" key="Color de los enlaces" type="text" 
+    value="#F00"/>
+    		<setting configurable="true" key="Color titulos H1" type="text" 
+    value="#F00"/>
+    		<setting configurable="true" key="Color titulos H2" type="text" 
+    	value="#000"/>
+    		<setting configurable="true" key="Color titulos H3" type="text" 
+    	value="#000"/>
+    		<setting configurable="true" key="Color de los textos del menu y de los idiomas sin seleccionar" type="text" 
+    value="#000"/>
+			<setting configurable="true" key="ID pie de pagina" type="text" value=""/>
+			<setting configurable="true" key="ID imagen portada" type="text" value=""/>
+			<setting configurable="true" key="ID logotipos cabecera" type="text" value=""/>
+    		<setting configurable="true" key="Color del texto de los botones" type="select" 
+    value="Blanco" options="Blanco,Negro"/>
+    		<setting configurable="true" key="Ancho de pagina" type="select" 
+    value="1280px" options="1366px,1280px,1170px"/>
+ 		</settings>
+ 		<layout-templates>
+        <custom>
+          <layout-template id="es_navarra_microsites_agenda_template" name="Agenda Micrositios">
+            <template-path>
+                /layoutttpl/custom/layout-agenda-layouttpl/agenda_template.tpl
+            </template-path>
+             <thumbnail-path>
+                /layoutttpl/custom/layout-agenda-layouttpl/agenda_template.png
+            </thumbnail-path>
+            
+          </layout-template>
+        </custom>
+      </layout-templates>
+	     <portlet-decorator id="barebone" name="Barebone">
+			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="borderless" name="Borderless">
+			<default-portlet-decorator>true</default-portlet-decorator>
+			<portlet-decorator-css-class>portlet-borderless</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="decorate" name="Decorate">
+			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
+		</portlet-decorator> 
+ 	</theme>
+ </look-and-feel>
